@@ -1,3 +1,9 @@
+"""
+test_main.py: šestý projekt do Engeto Online Python Akademie
+
+author: David Horák
+email: daviiid739@gmail.com
+"""
 from playwright.sync_api import Page, expect
 
 ENGETO_URL = "https://engeto.cz/"
