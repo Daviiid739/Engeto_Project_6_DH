@@ -5,7 +5,7 @@ TERMINY_KURZU_URL = "https://engeto.cz/terminy/"
 
 # --- HELPER FUNKCE ---
 def reject_cookies(page: Page):
-    """Otevře ENGETO homepage s již zavřenými cookies."""  
+    """Pomocná funkce pro zavření cookies overlaye"""  
     btn = page.locator("#cookiescript_reject")
     if btn.is_visible():
         btn.click()
