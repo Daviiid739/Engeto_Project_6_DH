@@ -33,6 +33,11 @@ def test_goto_terminy_kurzu(page: Page):
 
 
 def test_filtr_terminy_kurzu(page: Page):
+    """
+    Ověří že filtrování na stránce termínů funguje správně —
+    po zaškrtnutí filtrů 'Python' a 'Akademie (1,5–3 měsíce)' 
+    jsou zobrazeny pouze kurzy 'Python Akademie'.
+    """
     page.goto(TERMINY_KURZU_URL)
 
     reject_cookies(page)
@@ -54,6 +59,10 @@ def test_filtr_terminy_kurzu(page: Page):
 
 
 def test_pridat_kurz_do_kosiku(page: Page):
+    """
+    Ověří celý flow přidání kurzu do košíku — od homepage přes detail kurzu
+    a výběr termínu až po ověření obsahu košíku s správným množstvím.
+    """
     page.goto(ENGETO_URL)
 
     reject_cookies(page)
